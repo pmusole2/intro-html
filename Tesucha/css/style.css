@@ -61,7 +61,7 @@ body {
 }
 
 /* iPhone 6/7/8 X */
-@media only screen and (max-width:375px){
+@media only screen and (min-width:375px){
     #section1 {
         height: 120vh !important;
     }
