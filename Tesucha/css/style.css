@@ -80,7 +80,7 @@ body {
     }
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:720px){
     #section1 {
         height: 100vh !important;
     }
