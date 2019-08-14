@@ -88,3 +88,14 @@ body {
         margin-top:240px !important;
     }
 }
+@media only screen and (max-height:720px){
+    #top-section {
+        margin-top: 100px !important;
+    }
+    #section1 {
+        height: 110vh;
+    }
+}
+    
+    
+    
