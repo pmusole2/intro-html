@@ -11,7 +11,7 @@ body {
 
 #section1 {
     background: linear-gradient(rgba(14, 20, 16, 0.5),rgba(6, 27, 11, 0.9)), url(/Tesucha/images/agro1.jpg) center/cover no-repeat fixed;
-    height: 100vh;
+    height: 110vh;
     
     /* margin-top:10px; */
 }
@@ -31,3 +31,60 @@ body {
 }
 
 
+@media only screen and (min-width:635px){
+    #section1 {
+        height:125vh;
+    }
+    #top-section {
+        margin-top:80px !important;
+    }
+}
+
+@media only screen and (max-width:570px){
+    #top-section {
+        margin-top: 80px !important;
+    }
+    #section1 {
+        height:140vh;
+    }
+}
+
+/* iPhone 5 / 5s etc */
+@media only screen and (max-width: 325px){
+    body {
+        width:110vw !important;
+        text-align: center !important;
+    }
+    #section1 {
+        height : 130vh !important;
+    }
+}
+
+/* iPhone 6/7/8 X */
+@media only screen and (max-width:375px){
+    #section1 {
+        height: 105vh !important;
+    }
+    #top-section {
+        margin-top: 10px !important;
+    }
+}
+
+/* Pixel 2 / iPhone 6p/7p/8p */
+@media only screen and (max-width: 414px){
+    #section1 {
+        height: 100vh;
+    }
+    #top-section {
+        margin-top: 115px !important;
+    }
+}
+
+@media only screen and (min-width:768px){
+    #section1 {
+        height: 100vh !important;
+    }
+    #top-section {
+        margin-top:240px !important;
+    }
+}
