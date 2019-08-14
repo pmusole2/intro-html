@@ -31,7 +31,7 @@ body {
 }
 
 
-@media only screen and (min-width:635px){
+@media only screen and (max-width:635px){
     #section1 {
         height:125vh;
     }
@@ -52,11 +52,11 @@ body {
 /* iPhone 5 / 5s etc */
 @media only screen and (max-width: 325px){
     body {
-        width:110vw !important;
+        width:100vw !important;
         text-align: center !important;
     }
     #section1 {
-        height : 130vh !important;
+        height : 140vh !important;
       }
 }
 
