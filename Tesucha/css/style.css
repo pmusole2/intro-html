@@ -33,6 +33,7 @@ body {
 
 @media only screen and (min-width:635px){
     #section1 {
+        background: linear-gradient(rgba(14, 20, 16, 0.5),rgba(6, 27, 11, 0.9)), url(/Tesucha/images/agro1.jpg) center/cover no-repeat fixed;
         height:125vh;
     }
     #top-section {
@@ -46,6 +47,7 @@ body {
     }
     #section1 {
         height:140vh;
+        background: linear-gradient(rgba(14, 20, 16, 0.5),rgba(6, 27, 11, 0.9)), url(/Tesucha/images/agro1.jpg) center/cover no-repeat fixed;
     }
 }
 
@@ -57,12 +59,14 @@ body {
     }
     #section1 {
         height : 130vh !important;
+        background: linear-gradient(rgba(14, 20, 16, 0.5),rgba(6, 27, 11, 0.9)), url(/Tesucha/images/agro1.jpg) center/cover no-repeat fixed;
     }
 }
 
 /* iPhone 6/7/8 X */
 @media only screen and (max-width:375px){
     #section1 {
+        background: linear-gradient(rgba(14, 20, 16, 0.5),rgba(6, 27, 11, 0.9)), url(/Tesucha/images/agro1.jpg) center/cover no-repeat fixed;
         height: 105vh !important;
     }
     #top-section {
@@ -74,6 +78,7 @@ body {
 @media only screen and (max-width: 414px){
     #section1 {
         height: 100vh;
+        background: linear-gradient(rgba(14, 20, 16, 0.5),rgba(6, 27, 11, 0.9)), url(/Tesucha/images/agro1.jpg) center/cover no-repeat fixed;
     }
     #top-section {
         margin-top: 115px !important;
@@ -83,6 +88,7 @@ body {
 @media only screen and (max-width:720px){
     #section1 {
         height: 100vh !important;
+        background: linear-gradient(rgba(14, 20, 16, 0.5),rgba(6, 27, 11, 0.9)), url(/Tesucha/images/agro1.jpg) center/cover no-repeat fixed;
     }
     #top-section {
         margin-top:240px !important;
@@ -94,6 +100,7 @@ body {
     }
     #section1 {
         height: 110vh;
+        background: linear-gradient(rgba(14, 20, 16, 0.5),rgba(6, 27, 11, 0.9)), url(/Tesucha/images/agro1.jpg) center/cover no-repeat fixed;
     }
 }
     
