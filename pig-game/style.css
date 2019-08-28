@@ -281,3 +281,8 @@ input[type="number"] {
     color:white;
     text-align: center;
 }
+
+span.level-rule {
+    color: red;
+    font-weight: bold;
+}
