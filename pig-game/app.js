@@ -24,22 +24,26 @@ document.querySelector('.fa-sign-in-alt').addEventListener('click', () => {
 
 //Event Listener for Roll Dice
 document.querySelector('.btn-roll').addEventListener('click', function(){
-    if(setLevel >= 10 ){
+    if(setLevel >= 30 ){
         if(gamePlaying){
             //1. need a random number
             var dice = Math.floor(Math.random() * 6) + 1;
+            var dice2 = Math.floor(Math.random() * 6) + 1; // Generate random number for Dice 2
             prevRoll = dice;
 
             //2. Display the result
             var diceDom = document.querySelector('.dice')
+            var diceDom = document.querySelector('.dice-2') // Added for dice 2
             diceDom.style.display = 'block';
+            diceDom.style.display = 'block'; // To show dice 2 in the UI with the correctly rolled number
             diceDom.src = 'dice-' + dice + '.png';
+            diceDom.src = 'dice-' + dice + '.png'; //To roll the correct dice same as the random number Generated for Dice 2
 
             //3. Update round score only if the rolled number wasn't a 1
 
-            if(dice !== 1){
+            if(dice !== 1 && dice2 != 1){
                 //Add score
-                roundScore += dice;
+                roundScore += (dice + dice2);
                 document.querySelector('#current-' + activePlayer).textContent = roundScore;
 
                 // Coding Challenge / If player rolls two 6 in a row;
@@ -56,7 +60,7 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
             } 
         }
     } else {
-        alert('Please enter a winning level to begin the game!!!');
+        alert('Please enter a winning level number above 30 to begin the game!!!');
         return;  
     }  
 });
@@ -74,7 +78,8 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
         if(scores[activePlayer] >= setLevel){
             // Update the UI and end game
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!!!';
-            document.querySelector('.dice').style.display = 'none';
+            document.querySelector('.dice').style.display = 'none'; // Hide Dice 1 if game has ended
+            document.querySelector('.dice-2').style.display = 'none'; // Hide dice 2 if the game has ended
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
             document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
             gamePlaying = false;
@@ -106,6 +111,7 @@ function nextPlayer(){
 
     // Removing the dice
     document.querySelector('.dice').style.display =  'none';
+    document.querySelector('.dice-2').style.display = 'none'; // Hide Dice 2
 }
 
 //Init Function 
@@ -118,6 +124,7 @@ function init(){
     //Checking the level to begin with
 
     document.querySelector('.dice').style.display =  'none';
+    document.querySelector('.dice-2').style.display = 'none'; // Hide Dice 2
 
     document.getElementById('score-0').textContent = '0';
     document.getElementById('score-1').textContent = '0';
