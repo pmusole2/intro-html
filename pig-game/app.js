@@ -16,7 +16,7 @@ var scores, roundScore, activePlayer, gamePlaying, prevRoll, setLevel;
 init()
 
 // Code for setting winning level;
-document.querySelector('.ion-arrow-right-a').addEventListener('click', () => {
+document.querySelector('.fa-sign-in-alt').addEventListener('click', () => {
     setLevel = document.querySelector('#setLevel').value;
 });
 
