@@ -17,7 +17,11 @@ init()
 
 // Code for setting winning level;
 document.querySelector('.fa-sign-in-alt').addEventListener('click', () => {
-    setLevel = document.querySelector('#setLevel').value;
+    if(document.querySelector('#setLevel').value >= 30){
+        setLevel = document.querySelector('#setLevel').value;
+    } else {
+        alert('Enter a Number above 30 to begin the game!!');
+    }
 });
 
 
